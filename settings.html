@@ -16,8 +16,8 @@
 
 
 <link rel="manifest" href="manifest.json">
-<link rel="icon" href="https://github.com/sz-games/home/blob/main/G.png?raw=true">
-<title>Settings - Sz Games</title>
+<link rel="icon" href="https://raw.githubusercontent.com/compositedrivegames/compositedrivegames.github.io/refs/heads/main/icons/cdg%20icon.png?raw=true">
+<title>Settings - CompositeDriveGames</title>
 
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -72,53 +72,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
- <!--PageScript1-->
- <script id="CHECK">
-  function getCookie2(name) {
-const cookieName = name + "=";
-const cookies = document.cookie.split(';');
-for (let i = 0; i < cookies.length; i++) {
-    let cookie = cookies[i];
-    while (cookie.charAt(0) === ' ') {
-        cookie = cookie.substring(1);
-    }
-    if (cookie.indexOf(cookieName) === 0) {
-        return cookie.substring(cookieName.length, cookie.length);
-    }
-}
-return '';
-}
-
-
-let Setting14bu = getCookie2("PagePrevent");
-
-function checkPageClose(event) {
-
-
-    event.returnValue = "Prevent Page Close Is Active, You Can Click Off Of This";
-
-
-
-}
-function checkPageClose2() {
-if(Setting14bu==="true") {
-
-    window.onbeforeunload = function(event) {
-        // return a string to prevent the page from closing
-        event.preventDefault();
-        return "Prevent Page Close Is Active, You Can Click Off Of This";
-    };
-    window.addEventListener("beforeunload", checkPageClose);
-
-} 
-if(Setting14bu==="false") {
-
-}
-}
-console.log('CookiePAGE Value: ' + Setting14bu + "SzGames-Scripts Loaded")
-checkPageClose2()
-
-</script>
 <!--PageScript1-->
 </head>
 
@@ -369,7 +322,7 @@ text-align: center;
 
 
       <!--div class="header">
-        <img src="https://github.com/sz-games/home/blob/main/G.png?raw=true" style="position: relative; width: 150px; height: 150px;" alt="img">
+        <img src="https://raw.githubusercontent.com/compositedrivegames/compositedrivegames.github.io/refs/heads/main/icons/cdg%20icon.png?raw=true" style="position: relative; width: 150px; height: 150px;" alt="img">
         <h1>About</h1>
       </div-->
   
@@ -381,7 +334,7 @@ text-align: center;
   <a href="https://sites.google.com/view/fnf-unblockedhehe/home">
       <p class="game" style="left: 105px;" >Infinite Tower</p>
       <div class="fade" ></div>
-   <img style="border-radius: 15px; width: 400px;" src="https://github.com/sz-games/sz-games.github.io/blob/main/cover/fn.png?raw=true" alt="game">
+   <img style="border-radius: 15px; width: 400px;" src="https://raw.githubusercontent.com/compositedrivegames/compositedrivegames.github.io/refs/heads/main/icons/cdg%20icon.png?raw=true" alt="game">
   </a>
  
   
@@ -757,61 +710,6 @@ text-align: center;
     <br>
       <button style="color: white; font-size: 19px; cursor: pointer; left: 50%; position: relative; transform: translate(-50%, -0%); height: 35px; width: 40%; background-color: #1d1d1d; border-radius: 15px; border: none;" onclick="resetTab()">Clear</button>
 
-    <!--PageScript1-->
-    <script id="CHECK">
-          function getCookie2(name) {
-        const cookieName = name + "=";
-        const cookies = document.cookie.split(';');
-        for (let i = 0; i < cookies.length; i++) {
-            let cookie = cookies[i];
-            while (cookie.charAt(0) === ' ') {
-                cookie = cookie.substring(1);
-            }
-            if (cookie.indexOf(cookieName) === 0) {
-                return cookie.substring(cookieName.length, cookie.length);
-            }
-        }
-        return '';
-    }
- 
-    
-    let Setting1e4bu = getCookie2("PagePrevent");
-
-    function checkPageClose(event) {
-      
-        
-            event.returnValue = "Prevent Page Close Is Active, You Can Click Off Of This";
-      
-       
-     
-    }
-    function checkPageClose2() {
-        if(Setting1e4bu==="true") {
-        
-            window.onbeforeunload = function(event) {
-                // return a string to prevent the page from closing
-                event.preventDefault();
-                return "Prevent Page Close Is Active, You Can Click Off Of This";
-            };
-            window.addEventListener("beforeunload", checkPageClose);
-
-        } 
-        if(Setting1e4bu==="false") {
-        
-        }
-    }
-    console.log('CookiePAGE Value: ' + Setting1e4bu + "SzGames-Scripts Loaded")
-    checkPageClose2()
-
-    </script>
-
-
-
-  </div>
-
-  
-
-  <!--PG3 END-->
   <!--Content PG 5-->
 
 
@@ -873,128 +771,6 @@ text-align: center;
   </div>
 
 <!--Content PG 5 end-->
-
-
-<script>
-
-  function getCookie(name) {
-      const cookieName = name + "=";
-      const cookies = document.cookie.split(';');
-      for (let i = 0; i < cookies.length; i++) {
-          let cookie = cookies[i];
-          while (cookie.charAt(0) === ' ') {
-              cookie = cookie.substring(1);
-          }
-          if (cookie.indexOf(cookieName) === 0) {
-              return cookie.substring(cookieName.length, cookie.length);
-          }
-      }
-      return '';
-  }
-
-  // Usage
-
-
-
-  function setCookie(name, value, years) {
-      const expirationDate = new Date();
-      expirationDate.setFullYear(expirationDate.getFullYear() + years);
-      const expires = "expires=" + expirationDate.toUTCString();
-      document.cookie = name + "=" + value + ";" + expires + ";path=/";
-  }
-
-
-
-
-  let PageCloseOP = getCookie("PagePrevent");
-  let RestrictSmOP = getCookie("RestrictSmooth");
-  let PerformMode = getCookie("PerforMode");
-
-
-  function toggleOptionSet(name) {
-
-    if(name==="PageClose") {
-      if(PageCloseOP==='false' || PageCloseOP==="") {
-        setCookie("PagePrevent", 'true', 10); // Set the cookie to expire in 10 years
-
-      }
-      if(PageCloseOP==='true') {
-        setCookie("PagePrevent", 'false', 10); // Set the cookie to expire in 10 years
-      }
-      PageCloseOP = getCookie("PagePrevent")
-    }
-
-    if(name==="RestrictSm") {
-      if(RestrictSmOP==='false' || RestrictSmOP==="") {
-        setCookie("RestrictSmooth", 'true', 10); // Set the cookie to expire in 10 years
-      }
-      if(RestrictSmOP==='true') {
-        setCookie("RestrictSmooth", 'false', 10); // Set the cookie to expire in 10 years
-      }
-      RestrictSmOP = getCookie("RestrictSmooth")
-    }
-
-    if(name==="PerformMode") {
-      if(PerformMode==='false' || PerformMode==="") {
-        setCookie("PerforMode", 'true', 10); // Set the cookie to expire in 10 years
-      }
-      if(PerformMode==='true') {
-        setCookie("PerforMode", 'false', 10); // Set the cookie to expire in 10 years
-      }
-      PerformMode = getCookie("PerforMode")
-    }
-
-
-    CheckSettngs1B()
-
-
-  }      
-  
-  var pagecloseToggle = document.getElementById('toggle-PageClose')
-  var restrictToggle = document.getElementById('toggle-Restrict')
-  var performToggle = document.getElementById('toggle-Perform')
-
-
-  var option2bx = document.getElementById('Op2-Stat') //dont touch might break code
-
-
-
-  function CheckSettngs1B() {
-    PageCloseOP = getCookie("PagePrevent")
-
-    //PageClose
-      if(PageCloseOP==="true") {
-          pagecloseToggle.classList.add('active');
-      } 
-      if(PageCloseOP==="false") {
-          pagecloseToggle.classList.remove('active');
-      }
-
-    //RestrictSm
-      if(RestrictSmOP==="true") {
-          restrictToggle.classList.add('active');
-      } 
-      if(RestrictSmOP==="false") {
-          restrictToggle.classList.remove('active');
-      }
-
-    //PerformMode
-      if(PerformMode==="true") {
-        performToggle.classList.add('active');
-      } 
-      if(PerformMode==="false") {
-        performToggle.classList.remove('active');
-      }
-
-
-  }
-
-  CheckSettngs1B()
-
-
-</script>
-
-
 
 <!--Content PG 4-->
 
